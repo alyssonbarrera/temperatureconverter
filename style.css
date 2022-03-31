@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body::-webkit-scrollbar {
+    background-color: #141414;
+    width: 8px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #272727;
+}
+
+
+main {
+    display: flex;
+    background-color: #141414;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 100vh;
+    max-height: auto;
+}
+
+
+h2, p {
+    color: rgb(240, 240, 240);
+    text-align: center;
+    display: block;
+    margin: 2rem;
+}
+
+
+
+#inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0 0;
+}
+
+#inputs p {
+    text-align: left;
+    margin-top: 0.5rem;
+    font-size: 15px;
+    opacity: 0.5;
+    font-weight: bold;
+    margin: 0
+}
+
+input {
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: groove 2px red;
+    color: red;
+    font-size: 50px;
+    width: 15rem;
+
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+footer {
+    background-color: black;
+    padding: .9rem 0;
+
+}
+
+footer p {
+    margin: 0;
+    padding: .3125rem 0
+}
+
+@media screen and (min-width: 0) and (max-width: 780px) {
+    
+    body {
+        height: auto
+    }
+
+    section {
+        padding-bottom: 6rem;
+    }
+    h1 {
+        font-size: 40px !important
+    }
+
+    header {
+        padding-bottom: 0;
+    }
+
+}
